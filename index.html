@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nazahat Zahid Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Lora', serif; margin: 0; padding: 0; background: #fff; color: #333; }
+    header { background: #fddde6; padding: 1rem; text-align: center; }
+    header button { margin: 0 10px; padding: 10px 20px; border: none; background: maroon; color: white; font-weight: bold; cursor: pointer; border-radius: 5px; }
+    section { padding: 2rem; max-width: 900px; margin: auto; }
+    .card { background: #f9f9f9; margin-top: 2rem; border-radius: 8px; padding: 1rem 2rem; }
+    form input, form textarea { width: 100%; margin-bottom: 1rem; padding: 0.5rem; border: 1px solid #ccc; border-radius: 5px; }
+    form input[type="submit"] { background: maroon; color: white; font-weight: bold; border: none; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <img src="images/profile.png" alt="Profile Picture" class="circle-pic" />
+      <h1>Nazahat Zahid</h1>
+      <div style="margin-top: 10px;">
+        <button onclick="document.getElementById('resume').scrollIntoView()">Resume</button>
+        <button onclick="document.getElementById('projects').scrollIntoView()">Projects</button>
+        <button onclick="document.getElementById('contact').scrollIntoView()">Contact Me</button>
+        <button onclick="toggleTheme()">🌙 / ☀️</button>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="card">
+    <h2>About Me</h2>
+    
+    <p>Hi! I’m Nazahat Zahid, a Computer Science student at CUNY Queens College. I’m passionate about cybersecurity and AI training, and I enjoy exploring how technology can be used to build safer, smarter systems. I’m also interested in digital literacy and believe in using tech to empower others through education and access.</p>
+  </section>
+
+  <section id="education" class="card">
+    <h2>Education</h2>
+    <div class="flex">
+      <div class="edu-text">
+        <p><strong>CUNY Queens College</strong><br>Bachelor’s in Computer Science<br>Expected Graduation: 2026</p>
+      </div>
+      <div class="edu-img">
+        <img src="images/education.png" alt="Graduation Image">
+      </div>
+    </div>
+  </section>
+
+  <section id="values" class="card">
+    <h2>What I Value</h2>
+    <div class="flex">
+      <div class="val-text">
+
+<p>I believe in growth — not just professionally, but personally. I value kindness, curiosity, and the courage to keep learning. To me, success is not just about technical skills, but also about self-awareness, empathy, and the ability to create with purpose. I aim to use technology in a way that makes people feel seen, supported, and empowered — because growth that starts within can make the biggest difference outside.</p>
+
+</div>
+      <div class="val-img">
+        <img src="images/values.png" alt="Personal Values Image">
+      </div>
+    </div>
+  </section>
+
+
+<section id="resume" class="card">
+    <h2>My Resume</h2>
+
+    <h3>Summary</h3>
+    <p>Dedicated and detail-oriented Computer Science student with strong experience in digital literacy instruction, classroom support, and AI education. Passionate about using technology to make an impact through teaching, development, and cybersecurity advocacy.</p>
+
+    <h3>Education</h3>
+    <p><strong>CUNY Queens College</strong><br>Bachelor of Arts in Computer Science<br>Expected Graduation: June 2026</p>
+
+    <h3>Skills</h3>
+    <ul>
+      <li><strong>Languages:</strong> C++, Java, SQL, JavaScript, HTML, CSS</li>
+      <li><strong>Tools & Platforms:</strong> MySQL, GitHub, Google Classroom, VS Code, Microsoft Office Suite</li>
+      <li><strong>Soft Skills:</strong> Communication, Public Speaking, Workshop Facilitation, Team Collaboration</li>
+    </ul>
+
+    <h3>Certifications</h3>
+    <ul>
+      <li>AI Fundamentals (In Progress)</li>
+      <li>Cybersecurity Foundations (In Progress)</li>
+    </ul>
+
+    <h3>Work Experience</h3>
+    <ul>
+      <li><strong>Community Library Instructor</strong> – Queens Public Library | 2023–Present
+        <ul>
+          <li>Led technology literacy and AI workshops for diverse community members.</li>
+          <li>Created Google Classroom onboarding platforms and curriculum resources.</li>
+        </ul>
+      </li>
+      <li><strong>Substitute Paraprofessional</strong> – NYC DOE | 2022–Present
+        <ul>
+          <li>Supported students with IEPs and ELLs in K–12 settings.</li>
+          <li>Adapted learning materials for inclusive instruction.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>Projects</h3>
+    <ul>
+      <li><strong>Roman–Arabic Converter</strong> – Java application with bidirectional logic.</li>
+      <li><strong>Budget Buddy</strong> – Student-friendly finance tracker (HTML/CSS/JS).</li>
+      <li><strong>AI Literacy Workshop</strong> – Intro to AI safety and ethics for the public.</li>
+    </ul>
+
+    <h3>Volunteer & Leadership</h3>
+    <ul>
+      <li>Peer tutor for computer science basics and mentoring interns.</li>
+    </ul>
+  </section>
+
+  
+  <section id="projects" class="card three-col">
+    <div class="project-box">
+      <h3>🧮 Roman–Arabic Converter</h3>
+      <p><strong>Language:</strong> Java</p>
+      <p><strong>What it does:</strong> Converts numbers between Roman and Arabic numerals with bidirectional logic and validation.</p>
+      <img src="images/roman-converter.png" alt="Roman Converter" class="project-img">
+    </div>
+    <div class="project-box">
+      <h3>🌡️ Celsius–Fahrenheit Converter</h3>
+      <p><strong>Language:</strong> Java</p>
+      <p><strong>What it does:</strong> A console-based tool to convert temperature between Celsius and Fahrenheit.</p>
+      <img src="images/celsius-fahrenheit.png" alt="Celsius Fahrenheit" class="project-img">
+    </div>
+    <div class="project-box">
+      <h3>📊 Budget Buddy</h3>
+      <p><strong>Tools:</strong> HTML, CSS, JavaScript</p>
+      <p><strong>What it does:</strong> A budget tracker designed to help students manage income, expenses, and savings.</p>
+      <img src="images/budget-buddy.png" alt="Budget Tracker" class="project-img">
+    </div>
+  </section>
+
+
+  
+  <section id="skills" class="card">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Java</span>
+      <span>SQL</span>
+      <span>C++</span>
+    </div>
+  </section>
+
+
+  
+  <section id="hobbies" class="card">
+    <h2>Hobbies & Interests</h2>
+    <div class="hobbies-grid">
+      <span>🤖 Exploring AI Tools</span>
+      <span>🍰 Baking & Cooking</span>
+      <span>📚 Digital Literacy</span>
+      <span>🎬 Watching K-Dramas</span>
+    </div>
+  </section>
+
+
+  <footer class="card contact-card">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+      <p><a href="mailto:nazahatzahid146@gmail.com">nazahatzahid146@gmail.com</a></p>
+      <p><a href="tel:+19296391217">+1 929–639–1217</a></p>
+    </div>
+    <div class="social-icons">
+      <a href="https://github.com/Nazahat1104" target="_blank"><img src="images/github.svg" alt="GitHub" class="icon-social"></a>
+      <a href="https://www.linkedin.com/in/nazahat-zahid-425a9325b/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" class="icon-social"></a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const root = document.documentElement;
+      root.setAttribute("data-theme", root.getAttribute("data-theme") === "light" ? "dark" : "light");
+    }
+  </script>
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="card">
+  <h2>Contact Me</h2>
+  <form action="mailto:nazahatzahid146@gmail.com" method="POST" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+    <input type="submit" value="Send Message" />
+  </form>
+</section>
+</body>
+</html>
